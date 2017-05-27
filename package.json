@@ -1,0 +1,29 @@
+{
+  "name": "nodebb-plugin-user-css",
+  "version": "0.0.0",
+  "description": "Per-user custom CSS for NodeBB forums",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenLubar/nodebb-plugin-user-css.git"
+  },
+  "author": {
+    "name": "Ben Lubar",
+    "email": "ben.lubar@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BenLubar/nodebb-plugin-user-css/issues"
+  },
+  "readmeFilename": "README.md",
+  "homepage": "https://github.com/BenLubar/nodebb-plugin-user-css#readme",
+  "nbbpm": {
+    "compatibility": "^1.0.0"
+  },
+  "dependencies": {
+    "validator": "7.0.0"
+  }
+}
