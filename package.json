@@ -24,6 +24,6 @@
     "compatibility": "^1.0.0"
   },
   "dependencies": {
-    "validator": "7.0.0"
+    "validator": "7.2.0"
   }
 }
