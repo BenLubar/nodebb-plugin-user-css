@@ -26,18 +26,14 @@ function setCustomCSS(uid, customCSS, callback) {
 }
 
 plugin.addCustomSetting = function(data, callback) {
-	getCustomCSS(data.uid, function(err, customCSS) {
-		if (err) {
-			return callback(err);
-		}
+	var customCSS = data.settings.customCSS || '';
 
-		data.customSettings.push({
-			'title': 'Custom CSS',
-			'content': '<textarea data-property="customCSS" class="form-control" type="textarea">' + validator.escape(customCSS) + '</textarea><p class="help-block">Requires a refresh to take effect.</p>'
-		});
-
-		callback(null, data);
+	data.customSettings.push({
+		'title': 'Custom CSS',
+		'content': '<textarea data-property="customCSS" class="form-control" type="textarea">' + validator.escape(customCSS) + '</textarea><p class="help-block">Requires a refresh to take effect.</p>'
 	});
+
+	callback(null, data);
 };
 
 plugin.saveUserSettings = function(data) {
