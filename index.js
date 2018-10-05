@@ -7,12 +7,12 @@ function getCustomCSS(uid, callback) {
 	if (!uid) {
 		return callback(null, '');
 	}
-	db.getObjectFields('user:' + uid + ':settings', ['customCSS'], function(err, customCSS) {
+	db.getObjectField('user:' + uid + ':settings', 'customCSS', function(err, customCSS) {
 		if (err) {
 			return callback(err);
 		}
 
-		callback(null, (customCSS || {}).customCSS || '');
+		callback(null, customCSS || '');
 	});
 }
 

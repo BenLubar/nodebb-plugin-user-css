@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-user-css",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Per-user custom CSS for NodeBB forums",
   "main": "index.js",
   "scripts": {
